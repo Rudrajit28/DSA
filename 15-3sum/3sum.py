@@ -21,5 +21,7 @@ class Solution(object):
                     j+=1
                     while nums[j]==nums[j-1] and j<k:
                         j+=1
+                    while nums[k]==nums[k-1] and k>j:
+                        k-=1
         return res    
         
